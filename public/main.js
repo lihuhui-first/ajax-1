@@ -88,11 +88,11 @@ getCSS.onclick = () => {
         if (request.readyState === 4) {
             if (request.status >= 200 && request.status < 300) {
                 // //创建style标签
-                // const style = document.createElement('style')
+                const style = document.createElement("style");
                 // //填写style内容
-                // style.innerHTML = request.response
+                style.innerHTML = request.response;
                 // //插到head里面
-                // document.head.appendChild(style)
+                document.head.appendChild(style);
             } else {
                 alert('加载CSS失败')
             }
